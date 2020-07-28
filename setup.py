@@ -9,7 +9,7 @@ else:
 
 setuptools.setup(
     name="tempmailio",
-    version="0.0.2",
+    version="0.0.3",
     author="Kristof",
     description="python wrapper for tempmail.io",
     long_description=long_description,
