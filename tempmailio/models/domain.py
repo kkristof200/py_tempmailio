@@ -85,5 +85,22 @@ class Domain(JSONCodable):
     def myinbox(cls):
         return cls('myinbox.icu', 'public', True)
 
+    # @property
+    @classmethod
+    def random(cls):
+        import random
+
+        return random.choice(
+            [
+                cls.inboxme(),
+                cls.inscriptio(),
+                cls.cloudmail(),
+                cls.montokop(),
+                cls.privacymail(),
+                cls.safemail(),
+                cls.myinbox()
+            ]
+        )
+
 
 # ---------------------------------------------------------------------------------------------------------------------------------------- #

@@ -4,7 +4,7 @@ from tempmailio import *
 
 mail = TempMailI0(
     user_name='test',
-    domain=Domain.cloudmail()
+    domain=Domain.random()
 )
 
 success = mail.create_email()
